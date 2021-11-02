@@ -145,4 +145,7 @@ fun void main () {
 // this will trigger everything when /beginPiece comes in from masterSpeakerCtl.ck
 <<< "STARTING SERVER" >>>;
 
-get_osc(); // start sensor listener
+spork ~ get_osc(); // start sensor listener
+
+// run forever
+while( true ) 1::second => now;
