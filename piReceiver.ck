@@ -107,6 +107,7 @@ fun void get_osc() {
 			// bufPlay
 			if( msg.address == "/bufOn" ) {
 				<<< "BUFFER ON" >>>;
+				msg.getFloat(0) => bGain.gain;
 				bEnv.keyOn();
 			}
 			if( msg.address == "/bufOff" ) {
