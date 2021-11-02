@@ -78,7 +78,7 @@ fun void get_osc() {
 			// start piece
 			if( msg.address == "/beginPiece" ) {
 				<<< "BEGINNING CUED" >>>;
-				//Std.system("python3 oscDistanceSensor.py"); // start sensor program
+				Std.system("python3 oscDistanceSensor.py &"); // start sensor program
 				spork ~ main();
 			};
 			
@@ -102,6 +102,12 @@ fun void get_osc() {
 					0 => soundOn;
 					spork ~ sEnv.keyOff();
 				}
+			}
+			
+			// set freq
+			if( msg.address == "/freq" ) {
+				<<< "SET FREQ" >>>;
+				msg.getFloat(0) => s.freq;
 			}
 			
 			// bufPlay
