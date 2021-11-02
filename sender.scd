@@ -35,3 +35,6 @@ thisProcess.platform;
 )
 
 ~piHost.sendMsg("/beginPiece");
+~piHost.sendMsg("/bufOn", 0.5);
+~piHost.sendMsg("/bufOff");
+~piHost.sendMsg("/freq", rrand(100.0, 500));
