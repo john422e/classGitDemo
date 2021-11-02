@@ -105,8 +105,14 @@ fun void get_osc() {
 			}
 			
 			// bufPlay
-			if( msg.address == "/bufOn" ) bEnv.keyOn();
-			if( msg.address == "/bufOff" ) bEnv.keyOff();
+			if( msg.address == "/bufOn" ) {
+				<<< "BUFFER ON" >>>;
+				bEnv.keyOn();
+			}
+			if( msg.address == "/bufOff" ) {
+				<<< "BUFFER OFF >>>;
+				bEnv.keyOff();
+			}
 		}
 		//<<< "NO OSC" >>>;
 	}
