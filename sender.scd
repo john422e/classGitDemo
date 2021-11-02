@@ -15,3 +15,23 @@
 ~host2.sendMsg('/print', "HELLO WORLD!");
 // send argument to update a synth
 ~host.sendMsg('/freq', rrand(100.0, 1000));
+
+
+this.cmdLine;
+this
+
+thisProcess.platform;
+
+
+["ls"].unixCmd;
+
+
+
+
+(
+~piHostname = "pione.local";
+~piPort = 10001;
+~piHost = NetAddr.new(~piHostname, ~piPort);
+)
+
+~piHost.sendMsg("/beginPiece");

@@ -66,12 +66,14 @@ fun float normalize( float inVal, float x1, float x2 ) {
 }
 
 fun void get_osc() {
+	<<< "OSC SERVER ON" >>>;
 	while( serverOn == 1 ) {
 		
 		// check for osc messages
 		in => now;
 		while( in.recv(msg) ) {
 			// addresses
+			<<< "MESSAGE IN:", msg >>>;
 			
 			// start piece
 			if( msg.address == "/beginPiece" ) {
