@@ -76,6 +76,7 @@ fun void get_osc() {
 			// start piece
 			if( msg.address == "/beginPiece" ) {
 				<<< "BEGINNING CUED" >>>;
+				Std.system("python3 oscDistanceSensor.py"); // start sensor program
 				spork ~ main();
 			};
 			
