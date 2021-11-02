@@ -110,7 +110,7 @@ fun void get_osc() {
 				bEnv.keyOn();
 			}
 			if( msg.address == "/bufOff" ) {
-				<<< "BUFFER OFF >>>;
+				<<< "BUFFER OFF" >>>;
 				bEnv.keyOff();
 			}
 		}
