@@ -95,12 +95,12 @@ fun void get_osc() {
 					1 => soundOn;
 					normalize(dist, thresh, distOffset) => amp;
 					<<< "sensorAmp", amp >>>;
-					amp => e.target;
-					spork ~ e.keyOn();
+					amp => sEnv.target;
+					spork ~ sEnv.keyOn();
 				}
 				else { // no sound
 					0 => soundOn;
-					spork ~ e.keyOff();
+					spork ~ sEnv.keyOff();
 				}
 			}
 			
