@@ -115,17 +115,17 @@ fun void get_osc() {
 fun void main () {
 
 	// STARTUP SOUND ---------------------------------------------------
-	0.2 => s.gain;
-	0.01 => e.time;
+	0.2 => sGain.gain;
+	0.01 => sEnv.time;
 	for( 0 => int i; i < 5; i++ ) {
 		220 => s.freq;
-		e.keyOn();
+		sEnv.keyOn();
 		0.5::second => now;
-		e.keyOff();
+		sEnv.keyOff();
 		0.5::second => now;
 	}
-	1.0 => s.gain;
-	0.5 => e.time;
+	1.0 => sGain.gain;
+	0.5 => sEnv.time;
 
 	// MAIN PROGRAM ---------------------------------------------------
 
