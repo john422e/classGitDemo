@@ -1,7 +1,3 @@
-451.cpsmidi;
-451.cpsname;
-
-
 (
 SynthDef.new( \cpsNote, {
 	var freq, note, sig;
