@@ -8,6 +8,5 @@ git commit -m "description of update"
 git push
 
 
-
 git status (use at any point to see status of local vs remote)
 git diff (to show differences of any changed files vs remote)
