@@ -16,17 +16,7 @@
 // send argument to update a synth
 ~host.sendMsg('/freq', rrand(100.0, 1000));
 
-
-this.cmdLine;
-this
-
-thisProcess.platform;
-
-
-["ls"].unixCmd;
-
-
-
+//"128.84.124.209"
 
 (
 ~piHostname = "pione.local";
@@ -34,7 +24,17 @@ thisProcess.platform;
 ~piHost = NetAddr.new(~piHostname, ~piPort);
 )
 
+(
+~pi2Hostname = "pitwo.local";
+~pi2Port = 10001;
+~pi2Host = NetAddr.new(~pi2Hostname, ~pi2Port);
+)
+
 ~piHost.sendMsg("/beginPiece");
 ~piHost.sendMsg("/bufOn", 0.5);
 ~piHost.sendMsg("/bufOff");
 ~piHost.sendMsg("/freq", rrand(100.0, 500));
+
+~pi2Host.sendMsg("/beginPiece");
+~pi2Host.sendMsg("/bufOn", 0.5);
+~pi2Host.sendMsg("bufOff", 0.5);
