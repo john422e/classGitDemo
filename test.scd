@@ -1,3 +1,5 @@
+"A BIG LOCAL CHANGE".postln;
+
 (
 SynthDef.new( \cpsNote, {
 	var freq, note, sig;
