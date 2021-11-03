@@ -1,0 +1,13 @@
+in a terminal session:
+
+cd <path to local repository>
+git pull (to get any updates from remote)
+make edits to whatever files you want
+git add <edited filename>
+git commit -m "description of update"
+git push
+
+
+
+git status (use at any point to see status of local vs remote)
+git diff (to show differences of any changed files vs remote)
