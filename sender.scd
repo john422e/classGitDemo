@@ -14,7 +14,7 @@
 ~host.sendMsg('/print', "HELLO WORLD!");
 ~host2.sendMsg('/print', "HELLO WORLD!");
 // send argument to update a synth
-~host.sendMsg('/freq', 500);
+~host.sendMsg('/freq', 248);
 
 
 this.cmdLine;
