@@ -7,7 +7,7 @@ OSCdef.new(
 		["OSC MESSAGE:", msg, time, addr, port].postln;
 	},
 	\print,
-	recvPort: 10003
+	recvPort: 10002
 );
 )
 
