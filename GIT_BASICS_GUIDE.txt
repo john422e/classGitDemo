@@ -1,0 +1,51 @@
+in a terminal session:
+______________________________________________________________________
+TO EDIT FILES AND SYNC WITH REMOTE REPOSITORY:
+
+cd <path to local repository>
+git pull (to get any updates from remote)
+make edits to whatever files you want
+git add <edited filename>
+git commit -m "description of update"
+git push
+
+
+
+git status (use at any point to see status of local vs remote)
+git diff (to show differences of any changed files vs remote)
+
+
+______________________________________________________________________
+TO CLONE REMOTE REPOSITORY TO LOCAL (your computer):
+
+navigate to the remote repository and copy the URL (in github, click on the "Code" dropdown in the upper right corner of the file list and copy the https address given.)
+
+on your machine:
+navigate to the directory where you want to copy the repository then:
+
+git clone <copied address> (something like https://github.com/studioUser-CEMC/repoName.git)
+
+
+______________________________________________________________________
+TO START A NEW REPOSITORY ON YOUR MACHINE AND ADD TO A REMOTE:
+
+navigate to the folder where you want to create the repository (you probably want this in a self-contained folder—mkdir <folder name> to create a new one)
+
+in a terminal session:
+
+git init
+add or create a new file ("README.md" is the standard but it can be anything. use "touch <filename>" to make a file from the terminal
+git add <filename>
+git commit -m "first commit"
+
+now go to your github.com account (or wherever else you're hosting)
+click the "+" then "new repository" links in the upper right corner
+type in a repository name (you usually want this to be the same as the folder name on your machine)
+set it to public or private and click 'Create repository'
+click on the "Code" dropdown in the upper right corner of the file list and copy the https address given
+
+
+back in your terminal session:
+
+git remote add origin <copied address>
+git push -u origin master

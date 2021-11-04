@@ -1,5 +1,5 @@
 """
-oscDistance_still_life.py
+oscDistanceSensor.py
 john eagle
 sends sensor readings without being pinged every .25 seconds
 """
