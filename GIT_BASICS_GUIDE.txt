@@ -25,6 +25,8 @@ navigate to the directory where you want to copy the repository then:
 
 git clone <copied address> (something like https://github.com/studioUser-CEMC/repoName.git)
 
+NOTE: you won't be able to push any changes to the remote repository unless you've been added as a contributor. The B27 user is "studioUser-CEMC" and can be added as a contributor to your repository to allow changes to be pushed from the B27 computer.
+
 
 ______________________________________________________________________
 TO START A NEW REPOSITORY ON YOUR MACHINE AND ADD TO A REMOTE:
